@@ -26,15 +26,21 @@
     }
   }
 
-  @media (min-width:751px) and (max-width: 1099px){
+  @media (min-width:751px) and (max-width: 1099px) {
     .video-grid {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media (min-width:1100px){
+  @media (min-width:1100px) and (max-width: 1399px) {
     .video-grid {
       grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width:1400px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 
@@ -102,7 +108,9 @@
     padding: 4px;
   }
 
-  .video-link, .video-preview-link, .profile-link{
+  .video-link,
+  .video-preview-link,
+  .profile-link {
     color: black;
     text-decoration: none;
   }
@@ -113,46 +121,46 @@
   }
 
   .video-tooltip {
-  position: absolute;
-  top: 50px;
-  z-index: 300;
+    position: absolute;
+    top: 50px;
+    z-index: 300;
 
-  background-color: white;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
-  width: 200px;
+    background-color: white;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    width: 200px;
 
-  padding: 14px 8px 14px 10px;
-  border-radius: 6px;
-  
-  opacity: 0;
-  transition: opacity 0.15s;
-  pointer-events: none;
+    padding: 14px 8px 14px 10px;
+    border-radius: 6px;
 
-  display: flex;
-  align-items: center;
-}
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
 
-.video-tooltip .channel-pfp {
-  width: 45px;
-  border-radius: 30px;
-}
+    display: flex;
+    align-items: center;
+  }
 
-.video-tooltip-info {
-  margin-left: 10px;
-}
+  .video-tooltip .channel-pfp {
+    width: 45px;
+    border-radius: 30px;
+  }
 
-.video-tooltip-username {
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
+  .video-tooltip-info {
+    margin-left: 10px;
+  }
 
-.video-tooltip-subs {
-  font-size: 12px;
-  color: #606060;
-}
+  .video-tooltip-username {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .video-tooltip-subs {
+    font-size: 12px;
+    color: #606060;
+  }
 
 
-.profile-picture-container:hover .video-tooltip {
-  opacity: 1;
-}
+  .profile-picture-container:hover .video-tooltip {
+    opacity: 1;
+  }
