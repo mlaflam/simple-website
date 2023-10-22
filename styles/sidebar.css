@@ -5,15 +5,45 @@
   bottom: 0;
   top: 55px;
 
-  width: 200px;
+  width: 230px;
   background-color: white;
 
   z-index: 200;
   padding-top: 5px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px 5px 0px 10px;
 }
 
-.sidebar-link {
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(148, 147, 147);
+  border-radius: 10px;
+}
+
+.scrollbox {
+  overflow: auto;
+  padding-right: 10px;
+  margin-bottom: 60px;
+  visibility: hidden;
+}
+
+.scrollbox-inner,
+.scrollbox:hover {
+  visibility: visible;
+}
+
+
+.sidebar-link,
+.sidebar-link-shorts {
   height: 50px;
+  width: 190px;
 
   display: flex;
   justify-content: start;
@@ -22,9 +52,17 @@
   cursor: pointer;
 }
 
-.sidebar-link:hover {
+.sidebar-link:hover,
+.sidebar-link-shorts:hover {
   background-color: rgb(235, 235, 235);
   border-radius: 14px;
+}
+
+.shorts-icon {
+  height: 45px;
+  margin-left: 7px;
+  margin-right: 10px;
+  margin-bottom: 4px;
 }
 
 .sidebar-link img {
@@ -34,18 +72,27 @@
   margin-right: 20px;
 }
 
-.sidebar-link div { 
+.sidebar-link div,
+.sidebar-link-shorts div {
   font-size: 14px;
 
   display: flex;
   align-items: center;
   height: 50px;
   width: 150px;
-  
+
   padding: 0;
   margin: 0;
 }
 
-.sidebar-link div:hover {
+.sidebar-link div:hover,
+.sidebar-link-shorts div:hover {
   font-weight: 500;
+}
+
+.divider {
+  background-color: grey;
+  width: 97%;
+  height: 1px;
+  margin: 10px;
 }
