@@ -191,6 +191,7 @@
   align-items: center;
   justify-content: space-between;
   width: 140px;
+  right: 13px;
   flex-shrink: 0;
   margin-left: 90px;
   margin-right: 13px;
