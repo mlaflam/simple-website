@@ -70,6 +70,7 @@
 .middle-section {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 
   flex: 1;
   max-width: 730px;
